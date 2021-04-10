@@ -1,0 +1,28 @@
+{
+  "name": "ship-react-app",
+  "version": "1.0.0",
+  "description": "CLI tool for bootstrapping a static website deployment",
+  "scripts": {
+    "ship-react-app": "plop"
+  },
+  "bin": {
+    "ship-react-app": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbpreble/ship-react-app.git"
+  },
+  "author": "mbpreble",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbpreble/ship-react-app/issues"
+  },
+  "homepage": "https://github.com/mbpreble/ship-react-app#readme",
+  "dependencies": {
+    "plop": "^2.7.4"
+  },
+  "files": [
+    "plopfile.js",
+    "templates"
+  ]
+}

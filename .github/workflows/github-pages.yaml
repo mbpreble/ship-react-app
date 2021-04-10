@@ -1,0 +1,17 @@
+name: GitHub Pages Deploy
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v2
+        - run: npm --prefix my-react-app install
+        - run: npm --prefix my-react-app run build
+        - uses: peaceiris/actions-gh-pages@v3
+          with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: my-react-app/build
